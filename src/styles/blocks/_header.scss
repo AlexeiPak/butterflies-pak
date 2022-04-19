@@ -1,3 +1,55 @@
 header {
+  padding: 16px 0;
   background-color: $base-dark;
+}
+
+.header-inner {
+  @include inner;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  ul {
+    display: flex;
+
+  }
+
+  li {
+    list-style: none;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+
+
+    a {
+      padding: 36px 25px;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        background-color: $base-red;
+      }
+
+    }
+
+
+  }
 }
