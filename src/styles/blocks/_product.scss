@@ -1,3 +1,45 @@
 .product-inner {
   @include inner;
 }
+
+.product-text {
+  padding: 130px 0 100px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  color: #333333;
+}
+
+.product-wrap {
+  display: flex;
+  margin-left: -$gap-half;
+  margin-right: -$gap-half;
+  padding-bottom: 150px;
+}
+
+.product-visual {
+  flex-basis: 25%;
+  padding: 0 $gap-half;
+}
+
+.product-portfolio {
+  position: relative;
+}
+
+.portfolio-img-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 130px;
+}

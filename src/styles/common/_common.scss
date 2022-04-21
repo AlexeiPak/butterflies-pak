@@ -5,5 +5,11 @@
 }
 
 body {
+  padding-top: 88px;
   font-family: $font-opensans;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
