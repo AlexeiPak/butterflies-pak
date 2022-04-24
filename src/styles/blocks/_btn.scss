@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  padding: 30px 0 31px 0;
+  width: 497px;
+  font-family: $font-opensans;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 57px;
+  color: #fff;
+  text-align: center;
+  background-color: $base-red;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-form {
+  margin-top: 27px;
+  padding-top: 34px;
+  padding-bottom: 36px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+}

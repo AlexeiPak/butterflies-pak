@@ -1,0 +1,32 @@
+.form {
+  margin-left: -$gap-half;
+  margin-right: -$gap-half;
+  display: flex;
+}
+
+.form-field {
+  flex-basis: 33.33%;
+  padding: 0 $gap-half;
+  align-self: center;
+}
+
+.form-label {
+
+  display: inline;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333;
+}
+
+.form-input {
+  padding: 35px 30px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+}

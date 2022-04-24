@@ -2,11 +2,10 @@
   @include inner;
 }
 
-.promo-i {
+.promo {
   background-image: url('../images/promo-men.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .promo-fade {
@@ -27,8 +26,4 @@
   line-height: 98px;
   text-align: center;
   color: #FFFFFF;
-}
-
-.btn {
-  @include button;
 }
