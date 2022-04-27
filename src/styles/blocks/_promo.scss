@@ -1,7 +1,3 @@
-.promo-inner {
-  @include inner;
-}
-
 .promo {
   background-image: url('../images/promo-men.jpg');
   background-repeat: no-repeat;
@@ -11,6 +7,18 @@
 .promo-fade {
   padding: 200px 0 214px 0;
   background-color: rgba(51, 51, 51, 0.4);
+
+  @media (max-width: $tablet-max) {
+    padding: 180px 0 190px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 110px 0 100px 0;
+  }
+}
+
+.promo-inner {
+  @include inner;
 }
 
 .promo-wrap {
@@ -25,5 +33,16 @@
   font-size: 72px;
   line-height: 98px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
+
+  @media (max-width: $tablet-max) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 80px;
+    font-size: 32px;
+    line-height: 44px;
+  }
 }

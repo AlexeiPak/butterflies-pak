@@ -2,10 +2,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
   padding: 16px 0;
   background-color: $base-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 20px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 16px 0;
+  }
 }
 
 .header-inner {
@@ -23,8 +31,22 @@
 }
 
 .menu {
+  @media (max-width: $mobile-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+    background-color: $base-dark;
+  }
+
   ul {
     display: flex;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      text-align: center;
+    }
 
   }
 
@@ -32,22 +54,34 @@
     list-style: none;
     margin-left: 10px;
 
+    @media (max-width: $mobile-max) {
+      margin-left: 0;
+    }
+
     &:first-child {
       margin-left: 0;
     }
 
     a {
-      padding: 36px 25px;
+      padding: 33px 25px;
       font-size: 14px;
       line-height: 24px;
       text-decoration: none;
       color: #fff;
 
-      &:hover {
-        background-color: $base-red;
-      }
+      @media (max-width: $mobile-max) {
+        padding: 8px 25px;
 
+      }
     }
 
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    display: block;
   }
 }

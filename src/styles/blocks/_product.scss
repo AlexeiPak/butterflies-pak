@@ -1,6 +1,14 @@
 .product {
   padding: 130px 0;
   background-color: rgba(51, 51, 51, .1);
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 90px 0;
+  }
 }
 
 .product-inner {
@@ -14,6 +22,19 @@
   line-height: 87px;
   text-align: center;
   color: #333333;
+
+  @media (max-width: $tablet-max) {
+    padding-bottom: 80px;
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 60px;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
 }
 
 .product-wrap {
@@ -21,11 +42,31 @@
   margin-left: -$gap-half;
   margin-right: -$gap-half;
   padding-bottom: 120px;
+
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    padding-bottom: 40px;
+  }
 }
 
 .product-visual {
   flex-basis: 25%;
   padding: 0 $gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
+
 }
 
 .product-portfolio {
@@ -41,6 +82,10 @@
   text-align: center;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
+
+  @media (max-width: $tablet-max) {
+    padding: 20px 0;
+  }
 }
 
 .btn-wrap {

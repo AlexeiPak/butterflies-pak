@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  list-style: none;
+  align-self: center;
+}
+
+.social-link {
+  display: block;
+  margin-left: 15px;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-insta {
+  @media (max-width: $mobile-max) {
+    margin-left: 0;
+  }
+}
+
+.social-link-insta {
+  background-image: url('../images/icon-insta.svg');
+}
+
+.social-link-fb {
+  background-image: url('../images/icon-face.svg');
+}
+
+.social-link-telega {
+  background-image: url('../images/icon-tele.svg');
+}

@@ -9,9 +9,13 @@
 body {
   padding-top: 88px;
   font-family: $font-opensans;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 68px;
+  }
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }

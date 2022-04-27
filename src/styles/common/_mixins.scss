@@ -1,6 +1,7 @@
 @mixin inner {
-  width: 1278px;
+  max-width: 1278px + $gap;
   margin: 0 auto;
+  padding: 0 $gap-half;
   border: 1px solid red;
 }
 
@@ -10,4 +11,16 @@
     line-height: 57px;
     text-decoration: none;
     color: #fff;
+
+    @media (max-width: $tablet-max) {
+      font-size: 36px;
+      line-height: 49px;
+    }
+
+    @media (max-width: $mobile-max) {
+      font-size: 28px;
+      line-height: 38px;
+    }
 }
+
+

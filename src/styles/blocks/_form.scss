@@ -2,16 +2,37 @@
   margin-left: -$gap-half;
   margin-right: -$gap-half;
   display: flex;
+
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
 
 .form-field {
   flex-basis: 33.33%;
   padding: 0 $gap-half;
   align-self: center;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
 }
 
+.form-field-b {
+  @media (max-width: $tablet-max) {
+    flex-basis: 100%;
+  }
+}
+
+
 .form-label {
-  display: inline;
+  display: inline-block;
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 20px;
@@ -20,6 +41,7 @@
 }
 
 .form-input {
+  width: 100%;
   padding: 35px 30px;
   font-weight: 400;
   font-size: 28px;
@@ -28,4 +50,12 @@
   background-color: #fff;
   border: none;
   border-radius: 6px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 30px;
+  }
 }
