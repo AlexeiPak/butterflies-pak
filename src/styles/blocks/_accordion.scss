@@ -1,0 +1,63 @@
+.accordion {
+  background: #fff;
+  border: 1px solid rgba(255, 45, 45, 0.2);
+  border-radius: 4px;
+
+  &+& {
+    margin-top: 40px;
+  }
+
+  @media (max-width: $mobile-max) {
+    box-shadow: 0px 0px 8px rgba(212, 98, 64, 0.2);
+
+    &+& {
+      margin-top: 20px;
+    }
+  }
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 25px 30px;
+  text-align: left;
+  font-family: $font-opensans;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 49px;
+  border: none;
+  color: #152B3C;
+  background-color: #fff;
+  cursor: pointer;
+
+  @media (max-width: $tablet-max) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 15px 15px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.accordion-content {
+  display: none;
+  padding: 0 30px 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+
+  @media (max-width: $tablet-max) {
+    padding: 0 30px 25px 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

@@ -31,6 +31,11 @@
 }
 
 .menu {
+
+  @media (min-width: $tablet) {
+    display: block !important;
+  }
+
   @media (max-width: $mobile-max) {
     position: absolute;
     top: 100%;

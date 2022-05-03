@@ -1,0 +1,40 @@
+.faq {
+  padding: 130px 0;
+  // background-color: rgba(51, 51, 51, .1);
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 90px 0;
+  }
+}
+
+.faq-inner {
+  @include inner;
+}
+
+.faq-title {
+  padding-bottom: 80px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  color: #333;
+
+  @media (max-width: $tablet-max) {
+    padding-bottom: 70px;
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 49px;
+
+  }
+
+
+}
