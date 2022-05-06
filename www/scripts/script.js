@@ -1,8 +1,12 @@
 $(document).ready(function() {
 
+  // бургер
   $('.j-burger').on( 'click' , function() {
     $('.j-menu').slideToggle();
   });
+
+
+  // аккордионы
 
   let prevBtn;
 
@@ -19,6 +23,20 @@ $(document).ready(function() {
 
   });
 
+  // табы
+
+  $('.j-tabs-link').on('click', function(event) {
+    event.preventDefault();
+
+    let index = $(this).index('.j-tabs-link');
+
+    $('.j-tabs-link').removeClass('active');
+    $(this).addClass('active');
+
+    $('.j-contacts-item').removeClass('active');
+    $('.j-contacts-item').eq(index).addClass('active');
+
+  })
 
 
 });

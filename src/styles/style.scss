@@ -4,6 +4,9 @@
 @import "common/_fonts";
 @import "common/_common";
 
+// plugins
+@import "plugins/slick";
+
 // blocks
 @import "blocks/_header";
 @import "blocks/_promo";
@@ -15,4 +18,4 @@
 @import "blocks/_social";
 @import "blocks/_accordion";
 @import "blocks/_faq";
-
+@import "blocks/_contacts";
