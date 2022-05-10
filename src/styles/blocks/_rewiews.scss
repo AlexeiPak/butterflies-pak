@@ -1,0 +1,28 @@
+.reviews {
+  padding: 130px 0;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+}
+
+.reviews-inner {
+  @include inner;
+}
+
+.reviews-title {
+  padding-bottom: 77px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  color: #333;
+  text-align: center;
+
+  @media (max-width: $tablet-max) {
+    padding-bottom: 70px;
+    font-size: 60px;
+    line-height: 82px;
+  }
+}
+
+
