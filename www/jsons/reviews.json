@@ -1,0 +1,14 @@
+{
+  "reviews" : [
+    {
+      "imgUrl": "images/ava.jpg",
+      "name": "Джесс",
+      "text": "крутые бабочки"
+    },
+    {
+      "imgUrl": "images/ava.jpg",
+      "name": "Сара",
+      "text": "Норм, красиво"
+    }
+  ]
+}

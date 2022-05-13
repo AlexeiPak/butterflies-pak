@@ -40,7 +40,7 @@ $(document).ready(function () {
 
   // filter
 
-  $('.j-works-link').on('click', function(event) {
+  $('.j-works-link').on('click', function (event) {
     event.preventDefault();
 
     let dataFilter = $(this).data('filter');
@@ -53,7 +53,7 @@ $(document).ready(function () {
       return;
     }
 
-    $('.j-works-item').each(function() {
+    $('.j-works-item').each(function () {
       let dataType = $(this).data('type');
 
       if (dataType === dataFilter) {
@@ -65,9 +65,30 @@ $(document).ready(function () {
 
   });
 
-    //carousel
+  //carousel
+
+  if ($('.j-carousel').length) {
+
     $('.j-carousel').slick({
       dots: true
     });
 
+  }
+
+  // ajax
+
+  $.ajax({
+    type: 'POST',
+    url: 'jsons/reviews.json',
+    data: 'count=4',
+    success: function (res) {
+      console.log(res);
+    },
+    error: function () {
+      console.log('error');
+    }
+  });
+
 });
+
+

@@ -27,7 +27,7 @@
 }
 
 .logo {
- @include logo;
+  @include logo;
 }
 
 .menu {
@@ -73,6 +73,11 @@
       line-height: 24px;
       text-decoration: none;
       color: #fff;
+      transition: all .3s;
+
+      &:hover {
+        background-color: $base-red;
+      }
 
       @media (max-width: $mobile-max) {
         padding: 8px 25px;

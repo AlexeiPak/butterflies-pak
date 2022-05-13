@@ -69,8 +69,10 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
+  transition: all .3s;
 
-  &.active {
+  &.active,
+  &:hover {
     color: $base-red;
   }
 }
