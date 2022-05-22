@@ -77,17 +77,42 @@ $(document).ready(function () {
 
   // ajax
 
-  $.ajax({
-    type: 'POST',
-    url: 'jsons/reviews.json',
-    data: 'count=4',
-    success: function (res) {
-      console.log(res);
-    },
-    error: function () {
-      console.log('error');
-    }
+  $('.j-btn-works').on('click', function() {
+
+    $('.j-btn-works').addClass('btn-preload');
+
+    $.ajax({
+      type: 'POST',
+      url: 'jsons/reviews.json',
+      data: 'count=4',
+      success: function(res) {
+        $('.j-btn-works').removeClass('btn-preload');
+        createHtmlString(res.reviews);
+      },
+      error: function() {
+        console.log('О нееетт!!!');
+      }
+    });
   });
+
+  function createHtmlString(dataArray) {
+    let htmlString = '';
+
+    dataArray.forEach(function(dataItem) {
+      htmlString = htmlString + `<div class="works-item j-works-item" data-type="strict">
+      <figure class="works-portfolio">
+        <img src="${dataItem.imgUrl}" alt="" class="portfolio-img">
+        <figcaption class="portfolio-img-desc">${dataItem.name}</figcaption>
+      </figure>
+    </div>`;
+    });
+
+    printToPage(htmlString);
+  }
+
+  function printToPage(string) {
+    $('.j-works-list').append(string);
+  }
 
 });
 

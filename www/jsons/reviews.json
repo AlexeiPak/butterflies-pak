@@ -1,13 +1,13 @@
 {
   "reviews" : [
     {
-      "imgUrl": "images/ava.jpg",
-      "name": "Джесс",
+      "imgUrl": "images/portfolio-close-up-box.jpg",
+      "name": "Бабочка такая",
       "text": "крутые бабочки"
     },
     {
-      "imgUrl": "images/ava.jpg",
-      "name": "Сара",
+      "imgUrl": "images/portfolio-in-box.jpg",
+      "name": "Бабочка растакая",
       "text": "Норм, красиво"
     }
   ]

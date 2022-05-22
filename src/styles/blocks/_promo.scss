@@ -2,6 +2,15 @@
   background-image: url('../images/promo-men.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: $tablet-max) {
+    background-image: url('../images/promo-men-tab.jpg');
+  }
+
+  @media (max-width: $mobile-max) {
+    background-image: url('../images/promo-men-smart.jpg');
+  }
+
 }
 
 .promo-fade {
